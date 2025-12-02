@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safer Streets for Bikes & Scooters in Atlanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="canvas-container"></div>
+
+    <!-- 1. Homepage -->
+    <section class="section" id="sec-home">
+        <div class="content-card">
+            <div
+                class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-300 uppercase bg-blue-900 rounded-full bg-opacity-30">
+                Urban Proposal
+            </div>
+            <h1
+                class="text-4xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400">
+                Safer Streets<br>for Atlanta
+            </h1>
+            <h2 class="text-lg md:text-xl text-gray-300 mb-6 font-light">
+                Protecting riders and improving flow on Marietta Street.
+            </h2>
+            <button class="btn"
+                onclick="document.getElementById('sec-problem').scrollIntoView({behavior: 'smooth'})">Explore the
+                Proposal</button>
+        </div>
+        <div class="scroll-down text-sm text-gray-400">Scroll to explore</div>
+    </section>
+
+    <!-- 2. Problem Section -->
+    <section class="section" id="sec-problem">
+        <div class="content-card">
+            <h2 class="text-3xl font-bold text-red-400 mb-4">The Problem</h2>
+            <p class="mb-4 text-gray-300 leading-relaxed">
+                Without physical barriers, cars treat bike lanes as parking spots. This forces riders to swerve into
+                45mph traffic.
+            </p>
+            <div class="p-4 bg-red-900 bg-opacity-20 rounded border border-red-900 mb-4">
+                <p class="text-sm text-red-200">
+                    <strong>LIVE VIEW:</strong> Notice the <strong>grey cars parked</strong> in the bike lanes on both
+                    sides. Riders are forced to merge dangerously.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Research -->
+    <section class="section" id="sec-research">
+        <div class="content-card">
+            <h2 class="text-3xl font-bold text-blue-400 mb-4">The Data</h2>
+            <p class="mb-3 text-gray-300">Evidence from cities like NYC and Seattle shows that separation saves lives.
+            </p>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <span class="stat-number">+15%</span>
+                    <span class="text-xs text-gray-400">Traffic Efficiency</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">-40%</span>
+                    <span class="text-xs text-gray-400">Injury Risk</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. GT Success Story -->
+    <section class="section" id="sec-success">
+        <div class="content-card">
+            <h2 class="text-3xl font-bold text-green-400 mb-4">Success: Tech Parkway</h2>
+            <p class="mb-4 text-gray-300">
+                A proven model near Georgia Tech. When we separate traffic, everyone wins.
+            </p>
+            <div class="p-4 bg-green-900 bg-opacity-20 rounded border border-green-900 mb-4">
+                <p class="text-sm text-green-200">
+                    <strong>LIVE VIEW:</strong> The barriers have risen. The lanes turn green. Riders now have a
+                    dedicated, safe path.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Proposed Solution -->
+    <section class="section" id="sec-solution">
+        <div class="content-card">
+            <h2 class="text-3xl font-bold text-purple-400 mb-4">The Solution</h2>
+            <p class="mb-4 text-gray-300">Extending this protection to Marietta Street.</p>
+            <ul class="text-gray-300 list-disc ml-4 space-y-2">
+                <li><strong>Raised Lanes:</strong> Distinct from road grade.</li>
+                <li><strong>Bollards:</strong> Prevent car entry.</li>
+                <li><strong>No Parking:</strong> Physical inability to block lanes.</li>
+                <li><strong>Clear Signage:</strong> Predictable merging.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 6. Benefits -->
+    <section class="section" id="sec-benefits">
+        <div class="content-card">
+            <h2 class="text-3xl font-bold text-teal-400 mb-4">Community Benefits</h2>
+            <ul class="space-y-3">
+                <li class="border-l-4 border-teal-500 pl-4 py-1"><strong>Safety:</strong> Fewer ER visits for students.
+                </li>
+                <li class="border-l-4 border-teal-500 pl-4 py-1"><strong>Traffic:</strong> Less chaotic merging for
+                    drivers.</li>
+                <li class="border-l-4 border-teal-500 pl-4 py-1"><strong>Air:</strong> Reduced emissions from idling.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 7. Call to Action -->
+    <section class="section" id="sec-action">
+        <div class="content-card">
+            <h2 class="text-4xl font-extrabold mb-4">Make Our Streets Safer</h2>
+            <p class="mb-8 text-lg text-gray-300">Join 5,000+ residents demanding change.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <button class="btn">Sign the Petition</button>
+                <button class="btn btn-outline">Contact City Council</button>
+            </div>
+            <div class="border-t border-gray-700 pt-4 text-xs text-gray-500">
+                <p>Designed by the Safer Streets Coalition. © 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
