@@ -452,3 +452,70 @@ window.addEventListener('resize', () => {
 
 // Initial call
 handleScroll();
+
+// --- PETITION MODAL LOGIC ---
+function openPetitionModal() {
+    const modal = document.getElementById('petition-modal');
+    const content = document.getElementById('petition-content');
+
+    modal.classList.remove('hidden');
+    // Small delay to allow display:block to apply before opacity transition
+    setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        content.classList.remove('scale-95');
+        content.classList.add('scale-100');
+    }, 10);
+}
+
+function closePetitionModal() {
+    const modal = document.getElementById('petition-modal');
+    const content = document.getElementById('petition-content');
+
+    modal.classList.add('opacity-0');
+    content.classList.remove('scale-100');
+    content.classList.add('scale-95');
+
+    // Wait for transition to finish before hiding
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+}
+
+// Close modal when clicking outside
+document.getElementById('petition-modal').addEventListener('click', (e) => {
+    if (e.target.id === 'petition-modal') {
+        closePetitionModal();
+    }
+});
+
+// --- CONTACT MODAL LOGIC ---
+function openContactModal() {
+    const modal = document.getElementById('contact-modal');
+    const content = document.getElementById('contact-content');
+
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        content.classList.remove('scale-95');
+        content.classList.add('scale-100');
+    }, 10);
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contact-modal');
+    const content = document.getElementById('contact-content');
+
+    modal.classList.add('opacity-0');
+    content.classList.remove('scale-100');
+    content.classList.add('scale-95');
+
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+}
+
+document.getElementById('contact-modal').addEventListener('click', (e) => {
+    if (e.target.id === 'contact-modal') {
+        closeContactModal();
+    }
+});
